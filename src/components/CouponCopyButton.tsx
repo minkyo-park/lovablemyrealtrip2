@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Copy, Check } from "lucide-react";
 
+const AFFILIATE_URL = "https://myrealt.rip/XdC1f5";
+
 interface CouponCopyButtonProps {
   code: string;
   label?: string;
@@ -12,6 +14,7 @@ const CouponCopyButton = ({ code, label }: CouponCopyButtonProps) => {
   const handleCopy = () => {
     navigator.clipboard.writeText(code);
     setCopied(true);
+    window.open(AFFILIATE_URL, "_blank", "noopener,noreferrer");
     setTimeout(() => setCopied(false), 2000);
   };
 

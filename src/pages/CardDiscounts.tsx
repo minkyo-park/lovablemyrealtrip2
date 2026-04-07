@@ -157,6 +157,9 @@ const CardDiscounts = () => (
                   <td className="px-3 py-3">{c.minPurchase}</td>
                   <td className="px-3 py-3">{c.maxDiscount}</td>
                   <td className="px-3 py-3 text-xs">{c.period}</td>
+                  <td className="px-3 py-3">
+                    <AffiliateButton text="할인 받기" className="text-xs px-3 py-1.5 whitespace-nowrap" />
+                  </td>
                 </tr>
               ))}
             </tbody>
@@ -186,6 +189,9 @@ const CardDiscounts = () => (
                   <li className="flex items-start gap-2"><CheckCircle className="h-4 w-4 text-success mt-0.5 shrink-0" /><span><strong>적용 상품:</strong> {c.categories}</span></li>
                   <li className="flex items-start gap-2"><AlertTriangle className="h-4 w-4 text-warning mt-0.5 shrink-0" /><span><strong>TIP:</strong> {c.tip}</span></li>
                 </ul>
+                <div className="mt-4">
+                  <AffiliateButton text={`${c.name} 할인 적용하기 →`} />
+                </div>
               </div>
             </div>
           ))}
