@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 30% 98%;
+    --foreground: 220 20% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 15%;
+
+    --primary: 16 85% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 60% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 30 15% 93%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 45 100% 55%;
+    --accent-foreground: 220 20% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 15% 88%;
+    --input: 30 15% 88%;
+    --ring: 16 85% 55%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --success: 145 60% 42%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --info: 210 60% 50%;
+    --info-foreground: 0 0% 100%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(16, 85%, 55%), hsl(35, 95%, 55%));
+    --gradient-hero: linear-gradient(135deg, hsl(16, 85%, 55%) 0%, hsl(350, 70%, 50%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(30, 30%, 97%) 100%);
+    --gradient-dark: linear-gradient(135deg, hsl(220, 25%, 12%) 0%, hsl(220, 30%, 18%) 100%);
+
+    --shadow-card: 0 4px 24px -4px hsl(220 20% 15% / 0.08);
+    --shadow-elevated: 0 12px 40px -8px hsl(220 20% 15% / 0.15);
+    --shadow-glow: 0 0 30px hsl(16 85% 55% / 0.2);
+
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Noto Sans KR', sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-body);
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .cta-button {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 font-semibold text-primary-foreground transition-all duration-300;
+    background: var(--gradient-primary);
+    box-shadow: var(--shadow-card);
+  }
+
+  .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-elevated);
+  }
+
+  .cta-button:active {
+    transform: translateY(0);
+  }
+
+  .card-elevated {
+    @apply rounded-xl bg-card border border-border overflow-hidden;
+    box-shadow: var(--shadow-card);
+    transition: all 0.3s ease;
+  }
+
+  .card-elevated:hover {
+    box-shadow: var(--shadow-elevated);
+    transform: translateY(-4px);
+  }
+
+  .section-container {
+    @apply mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12 md:py-16;
+  }
+
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .badge-primary {
+    @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold bg-primary text-primary-foreground;
+  }
+
+  .badge-success {
+    @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold;
+    background: hsl(var(--success));
+    color: hsl(var(--success-foreground));
+  }
+
+  .badge-warning {
+    @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold;
+    background: hsl(var(--warning));
+    color: hsl(var(--warning-foreground));
+  }
+
+  .table-responsive {
+    @apply w-full overflow-x-auto;
+  }
+
+  .table-responsive table {
+    @apply w-full min-w-full;
+  }
+
+  @media (max-width: 768px) {
+    .table-responsive table {
+      @apply text-sm;
+    }
+    .table-responsive th,
+    .table-responsive td {
+      @apply px-2 py-2;
+    }
+  }
+
+  .coupon-code-box {
+    @apply flex items-center gap-2 rounded-lg border-2 border-dashed border-primary bg-primary/5 px-4 py-3 font-mono text-lg font-bold text-primary;
+  }
+
+  .faq-item {
+    @apply border-b border-border py-4;
+  }
+}
