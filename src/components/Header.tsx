@@ -17,7 +17,7 @@ const Header = () => {
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8" aria-label="메인 네비게이션">
         <Link to="/" className="flex items-center gap-2 font-bold text-lg" aria-label="마이리얼트립 쿠폰 홈">
           <Plane className="h-6 w-6 text-primary" />
-          <span className="gradient-text">MRT 쿠폰</span>
+          <span className="gradient-text">마이리얼트립 쿠폰</span>
         </Link>
 
         {/* Desktop nav */}

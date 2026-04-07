@@ -8,7 +8,7 @@ const Footer = () => (
         <div>
           <div className="flex items-center gap-2 mb-4">
             <Plane className="h-5 w-5 text-accent" />
-            <span className="font-bold text-lg">MRT 쿠폰</span>
+            <span className="font-bold text-lg">마이리얼트립 쿠폰</span>
           </div>
           <p className="text-sm text-primary-foreground/70 leading-relaxed">
             마이리얼트립 공식 파트너 할인코드 및 쿠폰 정보를 제공합니다. 
@@ -47,7 +47,7 @@ const Footer = () => (
       </div>
 
       <div className="mt-8 border-t border-primary-foreground/10 pt-6 text-center text-xs text-primary-foreground/50">
-        <p>© {new Date().getFullYear()} MRT 쿠폰 | mrt.dongbaektour.co.kr | All rights reserved.</p>
+        <p>© {new Date().getFullYear()} 마이리얼트립 쿠폰 | mrt.dongbaektour.co.kr | All rights reserved.</p>
       </div>
     </div>
   </footer>

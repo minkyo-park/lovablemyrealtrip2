@@ -16,7 +16,7 @@ const schema = {
   headline: "마이리얼트립 카드사 할인 혜택 총정리 – 최대 15% 할인",
   description: "신한, 삼성, 현대, KB, 하나, 우리카드 등 마이리얼트립 결제 시 카드사별 할인 혜택을 상세 비교합니다.",
   url: `${SITE}/card-discounts`,
-  author: { "@type": "Organization", name: "MRT 쿠폰" },
+  author: { "@type": "Organization", name: "마이리얼트립 쿠폰" },
   datePublished: "2026-04-01",
   dateModified: "2026-04-07",
 };

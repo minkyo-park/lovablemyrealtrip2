@@ -16,7 +16,7 @@ const schema = {
   headline: "마이리얼트립 항공권·숙소 할인 프로모션 총정리 (2026)",
   description: "마이리얼트립 항공권 특가, 숙소 할인, 패키지 프로모션 등 최신 여행 할인 정보를 총정리합니다.",
   url: `${SITE}/flights-hotels`,
-  author: { "@type": "Organization", name: "MRT 쿠폰" },
+  author: { "@type": "Organization", name: "마이리얼트립 쿠폰" },
   datePublished: "2026-04-01",
   dateModified: "2026-04-07",
 };

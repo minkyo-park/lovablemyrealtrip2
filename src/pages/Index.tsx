@@ -31,7 +31,7 @@ const pageSchema = {
 const orgSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "MRT 쿠폰 - 동백투어",
+  name: "마이리얼트립 쿠폰 - 동백투어",
   url: SITE,
   logo: `${SITE}/favicon.png`,
 };
@@ -310,7 +310,7 @@ const Index = () => (
           <thead>
             <tr className="border-b-2 border-primary">
               <th className="px-4 py-3 text-left font-semibold">비교 항목</th>
-              <th className="px-4 py-3 text-left font-semibold bg-primary/5">MRT 쿠폰 (이 사이트)</th>
+              <th className="px-4 py-3 text-left font-semibold bg-primary/5">마이리얼트립 쿠폰 (이 사이트)</th>
               <th className="px-4 py-3 text-left font-semibold">일반 블로그</th>
               <th className="px-4 py-3 text-left font-semibold">타 쿠폰 사이트</th>
             </tr>
