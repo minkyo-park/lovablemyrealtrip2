@@ -20,7 +20,7 @@ const Footer = () => (
           <h3 className="font-semibold mb-4">빠른 링크</h3>
           <ul className="space-y-2 text-sm">
             <li><Link to="/" className="text-primary-foreground/70 hover:text-accent transition-colors">홈</Link></li>
-            <li><Link to="/discount-codes" className="text-primary-foreground/70 hover:text-accent transition-colors">할인코드 가이드</Link></li>
+            <li><a href="/#discount-codes" className="text-primary-foreground/70 hover:text-accent transition-colors">할인코드 가이드</a></li>
             <li><Link to="/card-discounts" className="text-primary-foreground/70 hover:text-accent transition-colors">카드사 할인</Link></li>
             <li><Link to="/flights-hotels" className="text-primary-foreground/70 hover:text-accent transition-colors">항공권·숙소 프로모션</Link></li>
           </ul>

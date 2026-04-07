@@ -4,7 +4,6 @@ import { Menu, X, Plane } from "lucide-react";
 
 const navItems = [
   { label: "홈", path: "/" },
-  { label: "할인코드", path: "/discount-codes" },
   { label: "카드사 할인", path: "/card-discounts" },
   { label: "항공권·숙소", path: "/flights-hotels" },
 ];
