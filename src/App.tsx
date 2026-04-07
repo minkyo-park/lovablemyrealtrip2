@@ -6,7 +6,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Layout from "@/components/Layout";
 import Index from "./pages/Index.tsx";
-import DiscountCodes from "./pages/DiscountCodes.tsx";
+
 import CardDiscounts from "./pages/CardDiscounts.tsx";
 import FlightsHotels from "./pages/FlightsHotels.tsx";
 import NotFound from "./pages/NotFound.tsx";
@@ -23,7 +23,7 @@ const App = () => (
           <Layout>
             <Routes>
               <Route path="/" element={<Index />} />
-              <Route path="/discount-codes" element={<DiscountCodes />} />
+              
               <Route path="/card-discounts" element={<CardDiscounts />} />
               <Route path="/flights-hotels" element={<FlightsHotels />} />
               <Route path="*" element={<NotFound />} />
