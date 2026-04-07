@@ -141,6 +141,7 @@ const CardDiscounts = () => (
                 <th className="px-3 py-3 text-left font-semibold">최소 결제</th>
                 <th className="px-3 py-3 text-left font-semibold">월 한도</th>
                 <th className="px-3 py-3 text-left font-semibold">기간</th>
+                <th className="px-3 py-3 text-left font-semibold">바로가기</th>
               </tr>
             </thead>
             <tbody>
