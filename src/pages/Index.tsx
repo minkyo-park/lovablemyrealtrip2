@@ -18,9 +18,9 @@ const SITE = "https://mrt.dongbaektour.co.kr";
 const pageSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "마이리얼트립 쿠폰 할인코드 총정리",
+  name: "마이리얼트립 쿠폰",
   url: SITE,
-  description: "2026년 최신 마이리얼트립 할인코드, 쿠폰, 카드사 할인, 항공권 프로모션 총정리. 최대 5천원 즉시 할인.",
+  description: "2026년 5월 마이리얼트립 쿠폰을 한눈에 확인하세요. 현재 사용 가능한 마이리얼트립 할인쿠폰부터 쿠폰 받는 법까지 다양한 정보도 함께 정리되어 있습니다.",
   potentialAction: {
     "@type": "SearchAction",
     target: `${SITE}/?q={search_term_string}`,
@@ -31,7 +31,7 @@ const pageSchema = {
 const orgSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "마이리얼트립 쿠폰 - 동백투어",
+  name: "마이리얼트립 쿠폰",
   url: SITE,
   logo: `${SITE}/favicon.png`,
 };
@@ -79,12 +79,13 @@ const Index = () => (
   <>
     <Helmet>
       <title>마이리얼트립 쿠폰</title>
-      <meta name="description" content="2026년 최신 마이리얼트립 할인코드, 쿠폰, 카드사 할인, 항공권 프로모션 총정리. 최대 5천원 즉시 할인. 파트너 전용 할인코드로 여행 경비를 절약하세요." />
+      <meta name="description" content="2026년 5월 마이리얼트립 쿠폰을 한눈에 확인하세요. 현재 사용 가능한 마이리얼트립 할인쿠폰부터 쿠폰 받는 법까지 다양한 정보도 함께 정리되어 있습니다." />
       <link rel="canonical" href={SITE} />
       <meta property="og:title" content="마이리얼트립 쿠폰" />
-      <meta property="og:description" content="마이리얼트립 최대 5천원 즉시 할인. 카드사 최대 15% 할인. 항공권·숙소 특가 프로모션." />
+      <meta property="og:description" content="2026년 5월 마이리얼트립 쿠폰을 한눈에 확인하세요. 현재 사용 가능한 마이리얼트립 할인쿠폰부터 쿠폰 받는 법까지 다양한 정보도 함께 정리되어 있습니다." />
       <meta property="og:url" content={SITE} />
       <meta property="og:image" content={`${SITE}/og-image.jpg`} />
+      <meta property="og:site_name" content="마이리얼트립 쿠폰" />
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="ko_KR" />
       <meta name="twitter:card" content="summary_large_image" />
@@ -100,7 +101,7 @@ const Index = () => (
         <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, hsla(220,25%,12%,0.75) 0%, hsla(16,85%,55%,0.4) 100%)" }} />
       </div>
       <div className="relative mx-auto max-w-6xl px-4 py-20 sm:py-28 md:py-36 text-center">
-        <span className="badge-primary mb-4 inline-block">2026년 4월 최신</span>
+        <span className="badge-primary mb-4 inline-block">2026년 5월 최신</span>
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6" style={{ color: "white" }}>
           마이리얼트립<br />
           <span style={{ color: "hsl(45, 100%, 55%)" }}>할인코드 & 쿠폰</span> 총정리

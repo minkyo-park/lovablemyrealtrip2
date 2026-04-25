@@ -17,8 +17,8 @@ const schema = {
   description: "마이리얼트립 항공권 특가, 숙소 할인, 패키지 프로모션 등 최신 여행 할인 정보를 총정리합니다.",
   url: `${SITE}/flights-hotels`,
   author: { "@type": "Organization", name: "마이리얼트립 쿠폰" },
-  datePublished: "2026-04-01",
-  dateModified: "2026-04-07",
+  datePublished: "2026-05-01",
+  dateModified: "2026-05-07",
 };
 
 const promotions = [
@@ -94,8 +94,16 @@ const FlightsHotels = () => (
       <meta name="description" content="마이리얼트립 항공권 특가, 숙소 할인, 투어·액티비티 프로모션 총정리. 시즌별 최저가 타이밍, 타 플랫폼 비교, 할인 조합 방법까지 상세 안내." />
       <link rel="canonical" href={`${SITE}/flights-hotels`} />
       <meta property="og:title" content="항공권·숙소 할인 프로모션 - 마이리얼트립 쿠폰" />
+      <meta property="og:description" content="마이리얼트립 항공권 특가, 숙소 할인, 투어·액티비티 프로모션 총정리. 시즌별 최저가 타이밍, 타 플랫폼 비교, 할인 조합 방법까지 상세 안내." />
       <meta property="og:url" content={`${SITE}/flights-hotels`} />
       <meta property="og:image" content={`${SITE}/og-image.jpg`} />
+      <meta property="og:site_name" content="마이리얼트립 쿠폰" />
+      <meta property="og:type" content="article" />
+      <meta property="og:locale" content="ko_KR" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="항공권·숙소 할인 프로모션 - 마이리얼트립 쿠폰" />
+      <meta name="twitter:description" content="마이리얼트립 항공권 특가, 숙소 할인, 투어·액티비티 프로모션 총정리. 시즌별 최저가 타이밍, 타 플랫폼 비교, 할인 조합 방법까지 상세 안내." />
+      <meta name="twitter:image" content={`${SITE}/og-image.jpg`} />
     </Helmet>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 

@@ -17,8 +17,8 @@ const schema = {
   description: "신한, 삼성, 현대, KB, 하나, 우리카드 등 마이리얼트립 결제 시 카드사별 할인 혜택을 상세 비교합니다.",
   url: `${SITE}/card-discounts`,
   author: { "@type": "Organization", name: "마이리얼트립 쿠폰" },
-  datePublished: "2026-04-01",
-  dateModified: "2026-04-07",
+  datePublished: "2026-05-01",
+  dateModified: "2026-05-07",
 };
 
 const cards = [
@@ -72,7 +72,7 @@ const cards = [
     type: "청구할인",
     minPurchase: "5만원 이상",
     maxDiscount: "월 1만원",
-    period: "~2026.04.30",
+    period: "~2026.05.31",
     categories: "항공권, 숙소",
     tip: "하나카드 앱에서 마이리얼트립 쿠폰 다운로드 필요",
     color: "hsl(160, 60%, 40%)",
@@ -105,8 +105,16 @@ const CardDiscounts = () => (
       <meta name="description" content="삼성카드, 신한카드, 현대카드, KB국민, 하나, 우리카드 등 마이리얼트립 카드사별 할인 혜택 비교. 최대 15% 할인, 무이자 할부 정보까지 총정리." />
       <link rel="canonical" href={`${SITE}/card-discounts`} />
       <meta property="og:title" content="카드사 할인 혜택 총정리 - 마이리얼트립 쿠폰" />
+      <meta property="og:description" content="삼성카드, 신한카드, 현대카드, KB국민, 하나, 우리카드 등 마이리얼트립 카드사별 할인 혜택 비교. 최대 15% 할인, 무이자 할부 정보까지 총정리." />
       <meta property="og:url" content={`${SITE}/card-discounts`} />
       <meta property="og:image" content={`${SITE}/og-image.jpg`} />
+      <meta property="og:site_name" content="마이리얼트립 쿠폰" />
+      <meta property="og:type" content="article" />
+      <meta property="og:locale" content="ko_KR" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="카드사 할인 혜택 총정리 - 마이리얼트립 쿠폰" />
+      <meta name="twitter:description" content="삼성카드, 신한카드, 현대카드, KB국민, 하나, 우리카드 등 마이리얼트립 카드사별 할인 혜택 비교. 최대 15% 할인, 무이자 할부 정보까지 총정리." />
+      <meta name="twitter:image" content={`${SITE}/og-image.jpg`} />
     </Helmet>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
