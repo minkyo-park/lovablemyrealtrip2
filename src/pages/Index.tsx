@@ -12,6 +12,9 @@ import mobileImg from "@/assets/mobile-booking.jpg";
 import savingsImg from "@/assets/savings.jpg";
 import travelPlanImg from "@/assets/travel-planning.jpg";
 import happyImg from "@/assets/happy-travelers.jpg";
+import coupon1 from "@/assets/coupon-1.webp";
+import coupon2 from "@/assets/coupon-2.webp";
+import coupon3 from "@/assets/coupon-3.webp";
 
 const SITE = "https://mrt.dongbaektour.co.kr";
 
@@ -61,9 +64,9 @@ const stats = [
 ];
 
 const coupons = [
-  { code: "PACKMKTP1000", discount: "1,000원", minPurchase: "50,000원", category: "해외 투어·티켓", validity: "등록 후 7일" },
-  { code: "PACKMKTP3000", discount: "3,000원", minPurchase: "100,000원", category: "해외 투어·티켓", validity: "등록 후 7일" },
-  { code: "PACKMKTP5000", discount: "5,000원", minPurchase: "200,000원", category: "해외 투어·티켓", validity: "등록 후 7일" },
+  { code: "PACKMKTP1000", discount: "1,000원", minPurchase: "50,000원", category: "해외 투어·티켓", validity: "등록 후 7일", image: coupon1 },
+  { code: "PACKMKTP3000", discount: "3,000원", minPurchase: "100,000원", category: "해외 투어·티켓", validity: "등록 후 7일", image: coupon2 },
+  { code: "PACKMKTP5000", discount: "5,000원", minPurchase: "200,000원", category: "해외 투어·티켓", validity: "등록 후 7일", image: coupon3 },
 ];
 
 const faqItems = [
@@ -128,6 +131,9 @@ const Index = () => (
       <div className="space-y-6">
         {coupons.map((c, i) => (
           <div key={i} className="card-elevated p-6">
+            <div className="flex items-start gap-4">
+              <img src={c.image} alt={`마이리얼트립 ${c.code} ${c.discount} 할인쿠폰 이미지`} loading="lazy" width={1254} height={1254} className="w-24 sm:w-40 md:w-44 aspect-square object-cover rounded-lg shrink-0" />
+              <div className="flex-1 min-w-0">
             <div className="flex flex-wrap items-center gap-3 mb-4">
               <span className="badge-primary">{c.discount} 할인</span>
               <span className="badge-success">사용 가능</span>
@@ -148,6 +154,8 @@ const Index = () => (
               <div className="flex items-center gap-2">
                 <CheckCircle className="h-4 w-4 text-success" />
                 <span><strong>적용 대상:</strong> {c.category}</span>
+              </div>
+            </div>
               </div>
             </div>
           </div>
