@@ -39,7 +39,7 @@ const Header = () => {
         </ul>
 
         <a
-          href="https://myrealt.rip/XdC1f5"
+          href="https://myrealt.rip/aRT258"
           target="_blank"
           rel="noopener noreferrer"
           className="cta-button hidden md:inline-flex text-sm px-4 py-2"
@@ -78,7 +78,7 @@ const Header = () => {
             ))}
           </ul>
           <a
-            href="https://myrealt.rip/XdC1f5"
+            href="https://myrealt.rip/aRT258"
             target="_blank"
             rel="noopener noreferrer"
             className="cta-button mt-3 w-full text-center text-sm"

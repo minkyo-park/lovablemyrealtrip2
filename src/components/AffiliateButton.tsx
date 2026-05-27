@@ -8,7 +8,7 @@ interface AffiliateButtonProps {
 
 const AffiliateButton = ({ text = "할인 적용하고 예약하기", className = "", variant = "primary" }: AffiliateButtonProps) => (
   <a
-    href="https://myrealt.rip/XdC1f5"
+    href="https://myrealt.rip/aRT258"
     target="_blank"
     rel="noopener noreferrer"
     className={`cta-button ${variant === "large" ? "text-base px-8 py-4 animate-pulse-glow" : "text-sm"} ${className}`}

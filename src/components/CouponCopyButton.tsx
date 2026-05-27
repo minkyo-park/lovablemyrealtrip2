@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Copy, Check } from "lucide-react";
 
-const AFFILIATE_URL = "https://myrealt.rip/XdC1f5";
+const AFFILIATE_URL = "https://myrealt.rip/aRT258";
 
 interface CouponCopyButtonProps {
   code: string;

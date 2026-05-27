@@ -35,7 +35,7 @@ const Footer = () => (
             </li>
             <li className="flex items-center gap-2">
               <ExternalLink className="h-4 w-4" />
-              <a href="https://myrealt.rip/XdC1f5" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+              <a href="https://myrealt.rip/aRT258" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
                 마이리얼트립 바로가기
               </a>
             </li>
