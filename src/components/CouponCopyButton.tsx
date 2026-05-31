@@ -6,15 +6,16 @@ const AFFILIATE_URL = "https://myrealt.rip/aRT258";
 interface CouponCopyButtonProps {
   code: string;
   label?: string;
+  href?: string;
 }
 
-const CouponCopyButton = ({ code, label }: CouponCopyButtonProps) => {
+const CouponCopyButton = ({ code, label, href }: CouponCopyButtonProps) => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
     navigator.clipboard.writeText(code);
     setCopied(true);
-    window.open(AFFILIATE_URL, "_blank", "noopener,noreferrer");
+    window.open(href || AFFILIATE_URL, "_blank", "noopener,noreferrer");
     setTimeout(() => setCopied(false), 2000);
   };
 

@@ -17,8 +17,8 @@ const schema = {
   description: "마이리얼트립 항공권 특가, 숙소 할인, 패키지 프로모션 등 최신 여행 할인 정보를 총정리합니다.",
   url: `${SITE}/flights-hotels`,
   author: { "@type": "Organization", name: "마이리얼트립 쿠폰" },
-  datePublished: "2026-05-01",
-  dateModified: "2026-05-07",
+  datePublished: "2026-06-01",
+  dateModified: "2026-06-07",
 };
 
 const promotions = [

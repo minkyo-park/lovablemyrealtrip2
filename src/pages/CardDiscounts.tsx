@@ -17,8 +17,8 @@ const schema = {
   description: "신한, 삼성, 현대, KB, 하나, 우리카드 등 마이리얼트립 결제 시 카드사별 할인 혜택을 상세 비교합니다.",
   url: `${SITE}/card-discounts`,
   author: { "@type": "Organization", name: "마이리얼트립 쿠폰" },
-  datePublished: "2026-05-01",
-  dateModified: "2026-05-07",
+  datePublished: "2026-06-01",
+  dateModified: "2026-06-07",
 };
 
 const cards = [
@@ -72,7 +72,7 @@ const cards = [
     type: "청구할인",
     minPurchase: "5만원 이상",
     maxDiscount: "월 1만원",
-    period: "~2026.05.31",
+    period: "~2026.06.30",
     categories: "항공권, 숙소",
     tip: "하나카드 앱에서 마이리얼트립 쿠폰 다운로드 필요",
     color: "hsl(160, 60%, 40%)",
