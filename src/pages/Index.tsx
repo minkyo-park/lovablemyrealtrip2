@@ -23,7 +23,7 @@ const pageSchema = {
   "@type": "WebSite",
   name: "마이리얼트립 쿠폰",
   url: SITE,
-  description: "2026년 6월 마이리얼트립 쿠폰을 한눈에 확인하세요. 현재 사용 가능한 마이리얼트립 할인쿠폰부터 쿠폰 받는 법까지 다양한 정보도 함께 정리되어 있습니다.",
+  description: "2026년 7월 마이리얼트립 쿠폰을 한눈에 확인하세요. 현재 사용 가능한 마이리얼트립 할인쿠폰부터 쿠폰 받는 법까지 다양한 정보도 함께 정리되어 있습니다.",
   potentialAction: {
     "@type": "SearchAction",
     target: `${SITE}/?q={search_term_string}`,
@@ -86,10 +86,10 @@ const Index = () => (
   <>
     <Helmet>
       <title>마이리얼트립 쿠폰</title>
-      <meta name="description" content="2026년 6월 마이리얼트립 쿠폰을 한눈에 확인하세요. 현재 사용 가능한 마이리얼트립 할인쿠폰부터 쿠폰 받는 법까지 다양한 정보도 함께 정리되어 있습니다." />
+      <meta name="description" content="2026년 7월 마이리얼트립 쿠폰을 한눈에 확인하세요. 현재 사용 가능한 마이리얼트립 할인쿠폰부터 쿠폰 받는 법까지 다양한 정보도 함께 정리되어 있습니다." />
       <link rel="canonical" href={SITE} />
       <meta property="og:title" content="마이리얼트립 쿠폰" />
-      <meta property="og:description" content="2026년 6월 마이리얼트립 쿠폰을 한눈에 확인하세요. 현재 사용 가능한 마이리얼트립 할인쿠폰부터 쿠폰 받는 법까지 다양한 정보도 함께 정리되어 있습니다." />
+      <meta property="og:description" content="2026년 7월 마이리얼트립 쿠폰을 한눈에 확인하세요. 현재 사용 가능한 마이리얼트립 할인쿠폰부터 쿠폰 받는 법까지 다양한 정보도 함께 정리되어 있습니다." />
       <meta property="og:url" content={SITE} />
       <meta property="og:image" content={`${SITE}/og-image.jpg`} />
       <meta property="og:site_name" content="마이리얼트립 쿠폰" />
@@ -108,7 +108,7 @@ const Index = () => (
         <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, hsla(220,25%,12%,0.75) 0%, hsla(16,85%,55%,0.4) 100%)" }} />
       </div>
       <div className="relative mx-auto max-w-6xl px-4 py-20 sm:py-28 md:py-36 text-center">
-        <span className="badge-primary mb-4 inline-block">2026년 6월 최신</span>
+        <span className="badge-primary mb-4 inline-block">2026년 7월 최신</span>
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6" style={{ color: "white" }}>
           마이리얼트립<br />
           <span style={{ color: "hsl(45, 100%, 55%)" }}>할인코드 & 쿠폰</span> 총정리

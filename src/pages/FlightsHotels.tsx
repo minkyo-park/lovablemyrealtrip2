@@ -72,7 +72,7 @@ const platformComparison = [
 ];
 
 const seasonalDeals = [
-  { season: "봄 (3~5월)", destinations: "일본 벚꽃, 동남아", discountRate: "10~20%", bestFor: "벚꽃 투어, 오사카, 도쿄", timing: "2개월 전 예약 시 최저가" },
+  { season: "봄 (3~7월)", destinations: "일본 벚꽃, 동남아", discountRate: "10~20%", bestFor: "벚꽃 투어, 오사카, 도쿄", timing: "2개월 전 예약 시 최저가" },
   { season: "여름 (6~8월)", destinations: "유럽, 발리, 세부", discountRate: "15~30%", bestFor: "해변 리조트, 유럽 배낭여행", timing: "3~4개월 전 조기예약 필수" },
   { season: "가을 (9~11월)", destinations: "일본 단풍, 대만", discountRate: "10~25%", bestFor: "단풍 여행, 도쿄, 교토", timing: "1~2개월 전 예약 추천" },
   { season: "겨울 (12~2월)", destinations: "동남아, 호주", discountRate: "20~40%", bestFor: "따뜻한 곳 겨울 피서", timing: "비수기 특가 확인" },
