@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 import AffiliateButton from "@/components/AffiliateButton";
 import FAQ from "@/components/FAQ";
 import cardImg from "@/assets/card-discount.jpg";
@@ -100,7 +100,7 @@ const faqItems = [
 
 const CardDiscounts = () => (
   <>
-    <Helmet>
+    <Head>
       <title>카드사 할인 혜택 총정리 - 마이리얼트립 쿠폰</title>
       <meta name="description" content="삼성카드, 신한카드, 현대카드, KB국민, 하나, 우리카드 등 마이리얼트립 카드사별 할인 혜택 비교. 최대 15% 할인, 무이자 할부 정보까지 총정리." />
       <link rel="canonical" href={`${SITE}/card-discounts`} />
@@ -115,7 +115,7 @@ const CardDiscounts = () => (
       <meta name="twitter:title" content="카드사 할인 혜택 총정리 - 마이리얼트립 쿠폰" />
       <meta name="twitter:description" content="삼성카드, 신한카드, 현대카드, KB국민, 하나, 우리카드 등 마이리얼트립 카드사별 할인 혜택 비교. 최대 15% 할인, 무이자 할부 정보까지 총정리." />
       <meta name="twitter:image" content={`${SITE}/og-image.jpg`} />
-    </Helmet>
+    </Head>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
     {/* Hero */}

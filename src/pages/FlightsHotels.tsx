@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 import AffiliateButton from "@/components/AffiliateButton";
 import FAQ from "@/components/FAQ";
 import flightImg from "@/assets/flight-hotel.jpg";
@@ -89,7 +89,7 @@ const faqItems = [
 
 const FlightsHotels = () => (
   <>
-    <Helmet>
+    <Head>
       <title>항공권·숙소 할인 프로모션 - 마이리얼트립 쿠폰</title>
       <meta name="description" content="마이리얼트립 항공권 특가, 숙소 할인, 투어·액티비티 프로모션 총정리. 시즌별 최저가 타이밍, 타 플랫폼 비교, 할인 조합 방법까지 상세 안내." />
       <link rel="canonical" href={`${SITE}/flights-hotels`} />
@@ -104,7 +104,7 @@ const FlightsHotels = () => (
       <meta name="twitter:title" content="항공권·숙소 할인 프로모션 - 마이리얼트립 쿠폰" />
       <meta name="twitter:description" content="마이리얼트립 항공권 특가, 숙소 할인, 투어·액티비티 프로모션 총정리. 시즌별 최저가 타이밍, 타 플랫폼 비교, 할인 조합 방법까지 상세 안내." />
       <meta name="twitter:image" content={`${SITE}/og-image.jpg`} />
-    </Helmet>
+    </Head>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
     {/* Hero */}

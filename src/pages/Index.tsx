@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
 import { Ticket, CreditCard, Plane, Star, Clock, Shield, TrendingUp, ArrowRight, Calculator, Info, AlertTriangle, CheckCircle, Tag } from "lucide-react";
 import AffiliateButton from "@/components/AffiliateButton";
@@ -84,7 +84,7 @@ const faqItems = [
 
 const Index = () => (
   <>
-    <Helmet>
+    <Head>
       <title>마이리얼트립 쿠폰</title>
       <meta name="description" content="2026년 7월 마이리얼트립 쿠폰을 한눈에 확인하세요. 현재 사용 가능한 마이리얼트립 할인쿠폰부터 쿠폰 받는 법까지 다양한 정보도 함께 정리되어 있습니다." />
       <link rel="canonical" href={SITE} />
@@ -96,7 +96,7 @@ const Index = () => (
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="ko_KR" />
       <meta name="twitter:card" content="summary_large_image" />
-    </Helmet>
+    </Head>
 
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />

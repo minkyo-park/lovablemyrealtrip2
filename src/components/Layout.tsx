@@ -1,9 +1,15 @@
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Outlet } from "react-router-dom";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { Toaster as Sonner } from "@/components/ui/sonner";
+import { Toaster } from "@/components/ui/toaster";
+import { TooltipProvider } from "@/components/ui/tooltip";
 import Header from "./Header";
 import Footer from "./Footer";
 
-const Layout = ({ children }: { children: React.ReactNode }) => {
+const queryClient = new QueryClient();
+
+const Layout = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -11,11 +17,19 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   }, [pathname]);
 
   return (
-    <div className="flex min-h-screen flex-col">
-      <Header />
-      <main className="flex-1">{children}</main>
-      <Footer />
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <div className="flex min-h-screen flex-col">
+          <Header />
+          <main className="flex-1">
+            <Outlet />
+          </main>
+          <Footer />
+        </div>
+      </TooltipProvider>
+    </QueryClientProvider>
   );
 };
 
