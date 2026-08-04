@@ -18,7 +18,7 @@ const schema = {
   url: `${SITE}/flights-hotels`,
   author: { "@type": "Organization", name: "마이리얼트립 쿠폰" },
   datePublished: "2026-06-01",
-  dateModified: "2026-06-07",
+  dateModified: "2026-08-04",
 };
 
 const promotions = [
