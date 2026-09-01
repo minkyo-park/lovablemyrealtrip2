@@ -18,7 +18,7 @@ const schema = {
   url: `${SITE}/card-discounts`,
   author: { "@type": "Organization", name: "마이리얼트립 쿠폰" },
   datePublished: "2026-06-01",
-  dateModified: "2026-08-04",
+  dateModified: "2026-09-01",
 };
 
 const cards = [
@@ -39,7 +39,7 @@ const cards = [
     type: "할인쿠폰",
     minPurchase: "30만원 이상",
     maxDiscount: "월 3만원",
-    period: "~2026.08.31",
+    period: "~2026.09.30",
     categories: "해외투어, 액티비티",
     tip: "Tops 쿠폰함에서 마이리얼트립 쿠폰 신청 후 사용",
     color: "hsl(210, 80%, 40%)",
@@ -50,7 +50,7 @@ const cards = [
     type: "청구할인",
     minPurchase: "10만원 이상",
     maxDiscount: "월 2만원",
-    period: "~2026.08.31",
+    period: "~2026.09.30",
     categories: "전 상품",
     tip: "현대카드 앱에서 마이리얼트립 혜택 활성화 필수",
     color: "hsl(0, 0%, 20%)",
@@ -72,7 +72,7 @@ const cards = [
     type: "청구할인",
     minPurchase: "5만원 이상",
     maxDiscount: "월 1만원",
-    period: "~2026.08.31",
+    period: "~2026.09.30",
     categories: "항공권, 숙소",
     tip: "하나카드 앱에서 마이리얼트립 쿠폰 다운로드 필요",
     color: "hsl(160, 60%, 40%)",
